@@ -141,6 +141,12 @@ font-size : 90%;
  margin : 0px 10px 10px 0px;
 }
 
+#media img{
+  display:inline-block;
+  height:500px;
+  width:350px
+}
+
 h2 {
  padding: 0 0 0 40px;
  background : url(../images/plus-minus.png) no-repeat 0px 0px;
@@ -153,3 +159,4 @@ iframe{
   margin-left:auto;
   margin-right:auto;
 }
+
