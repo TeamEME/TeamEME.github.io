@@ -1,4 +1,4 @@
-/*style sheet for example cafe*/
+
 
 @font-face {
   
@@ -135,8 +135,8 @@ font-size : 90%;
 }
 
 #main_image {
-  height:100%;
-  width:100%;
+  height:75%;
+  width:80%;
  border : 1px solid #000000;
  margin : 0px 10px 10px 0px;
 }
