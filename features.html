@@ -20,13 +20,26 @@
 </nav>
 
 <h2>Features</h2>
-<h1>SLAM (Simultaneous Localization And Mapping)</h1>
+<h3>SLAM (Simultaneous Localization And Mapping)</h3>
 	<p> The localization and mapping of a dynamic environment is has been done previously using the RGBD SLAM algoritm.
-		A better visual -SLAM algorithm, the ORB SLAM will be implemented now using a Kinect
-<h2>Voice based modules</h2>
-<h2>Facial Recognition</h2>
-<h2>Object Detection and Manipulation</h2>
-<h2>Mechanical Structure and Analysis</h2>
+		A better visual -SLAM algorithm, the ORB SLAM will be implemented now using a Kinect</p>
+	<p><b> ORB-SLAM Overview </b></p>
+	<ul>
+		<li>Feature Choice  ORB features</li>
+		<li>Three Threads: Tracking, Local Mapping and Loop Closing  Run in parallel</li>
+		<li>Map Points, Key Frames and their Selection
+			Stores  world coordinate system, viewing system, representative ORB descriptor; camera pose, camera intrinsics like focal length and principal point</li> 
+		<li>Co-visibility Graph and Essential Graph
+			Each node is a key frame and an edge between two key frames exists if they share observations of the same map points</li>
+		<li>Bags of Words Place Recognition  To perform loop detection and re-localization
+			visual vocabulary is created offline with the ORB descriptors extracted from a large set of images</li>
+	</ul>
+
+		
+<h3>Voice based modules</h3>
+<h3>Facial Recognition</h3>
+<h3>Object Detection and Manipulation</h3>
+<h3>Mechanical Structure and Analysis</h3>
 
    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
