@@ -150,7 +150,8 @@ font-size : 90%;
   display:inline-block;
   height:500px;
   width:350px;
-  margin:auto;
+  margin:50px;
+  padding:50px;
 }
 
 /*h2 {
