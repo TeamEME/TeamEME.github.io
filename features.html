@@ -20,7 +20,7 @@
    <a href="http://www.robocupathome.org/">ROBOCUP</a>
 </nav>
 
-<h2>Features</h2>
+<h2>Features of the robot</h2>
 <h3 id="features">SLAM (Simultaneous Localization And Mapping)</h3>
 	<p> The localization and mapping of a dynamic environment is has been done previously using the RGBD SLAM algoritm.
 		A better visual -SLAM algorithm, the ORB SLAM will be implemented now using a Kinect sensor</p>
@@ -36,7 +36,7 @@
 			<br>visual vocabulary is created offline with the ORB descriptors extracted from a large set of images</li>
 	</ul>
 	
-<h3>Voice based modules</h3>
+<h3 id="features">Voice based modules</h3>
 <p>To interact with the people around, in a dynamic environment voice based modules will be integrated with other modules.</p><br>
 	
 Voice based modules comprise of : <br>
@@ -48,10 +48,10 @@ Voice based modules comprise of : <br>
 
 <p>To carry out voice based tasks or tasks which require human robot interaction, three microphones will be integrated with the hardware, 120 degrees apart and a kinect sensor. HARK, open source robot software is used for voice localization, while PocketSphinx for speech recognition and voice synthesis. This will enable the robot to understand what the user says. after understanding it will be able to respond (reply and perform actions) accordingly and the robot will be able to distinguish different voices or voices coming from different positions. </p>
 
-<h3>Facial Recognition</h3>
+<h3 id="features">Facial Recognition</h3>
 <p>Searching of faces from a source image or video is referred as face detection and identification or verification, of people from digital video frames or images, according to given database is reffered as face recognition.For identification, unknown face is recognized by matching against faces of a data base containing known individuals. For verification the system confirms or rejects the claimed identity of the input face. We use the face detection algorithm implemented in the OpenCV library. </p> 
 
-<h3>Object Detection and Manipulation</h3>
+<h3 id="features" >Object Detection and Manipulation</h3>
 <p>For object jetection we are using Object Recognition Kitichen (ORK). It comprises of different pakages like LINE-MOD, tabletop, TOD etc. of them we are using Tabletop technique.</p>
 <ul>
 	<li>Uses the depth image from any camera (we are using Kinect Xbox 360) to create 3D environment </li>
@@ -67,7 +67,7 @@ Voice based modules comprise of : <br>
 	</ul>
 	<p>Program is fed using the Arduino 1.0.6 compiler. However there is also another approach using a GUI software name pyPose to porgram the motors of the Turtlebot arm</p>
 
-<h3>Human Follower</h3>
+<h3 id="features">Human Follower</h3>
 <p>Centeroid line algorithm is used for person tracking. It works on the the basis of centeroid line formed by the point cloud mapping using depth camera. The robot follows the center and maintains a specific distance and act accordingly if distance get changed.
 The point cloud mapping also allows obstacle avoidance, as the program is fed the density of the point clouds for a humanas as well as for random objects. Hence when the poit clud density changes It stops following. </p>
 
