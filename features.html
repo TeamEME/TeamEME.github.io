@@ -5,16 +5,6 @@
 <title>Features</title>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 <link rel="stylesheet" href="interface.css">
-
-<style type="text/css">
- .row { vertical-align: top; height:auto !important; }
- .list {display:none; }
- .show {display: none; }
- .hide:target + .show {display: inline; }
- .hide:target {display: none; }
- .hide:target ~ .list {display:inline; }
- @media print { .hide, .show { display: none; } }
- </style>
 </head>
 
 <body>
@@ -46,9 +36,7 @@
 		<li>Bags of Words Place Recognition -> To perform loop detection and re-localization
 			<br>visual vocabulary is created offline with the ORB descriptors extracted from a large set of images</li>
 	</ul>
-</div>
 
-<div data-role="collapsible">
 <h3>Voice based modules</h3>
 <p>To interact with the people around, in a dynamic environment voice based modules will be integrated with other modules.</p><br>
 	
@@ -61,14 +49,10 @@ Voice based modules comprise of : <br>
 
 <p>To carry out voice based tasks or tasks which require human robot interaction, three microphones will be integrated with the hardware, 120 degrees apart and a kinect sensor. HARK, open source robot software for voice modules i.e. voice localization, automatic recognition and voice synthesis will be used.
 Using HARK will enable the robot to understand what the user says. after understanding it will be able to respond(reply and perform actions) accordingly and the robot will be able to distinguish different voices or voices coming from different positions. Hark will provide real time processing.</p>
-</div>
 
-<div data-role="collapsible">	
 <h3>Facial Recognition</h3>
 <p>Searching of faces from a source image or video is referred as face detection and identification or verification, of people from digital video frames or images, according to given database is reffered as face recognition.For identification, unknown face is recognized by matching against faces of a data base containing known individuals. For verification the system confirms or rejects the claimed identity of the input face. We use the face detection algorithm implemented in the OpenCV library. </p> 
-</div>
 
-<div data-role="collapsible">
 <h3>Object Detection and Manipulation</h3>
 <p>For object jetection we are using Object Recognition Kitichen (ORK). It comprises of different pakages like LINE-MOD, tabletop, TOD etc. of them we are using Tabletop technique.</p>
 <ul>
@@ -84,7 +68,6 @@ Using HARK will enable the robot to understand what the user says. after underst
 		<li>ArbotiX chip</li>
 	</ul>
 	<p>Program is fed using the Arduino 1.0.6 compiler. However there is also another approach using a GUI software name pyPose to porgram the motors of the Turtlebot arm</p>
-</div>
 	
    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
