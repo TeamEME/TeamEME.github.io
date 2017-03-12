@@ -9,12 +9,13 @@
 
 <body>
 <div id="page">
-
+<img src="https://s25.postimg.org/fdah78cjj/website_header_1200.jpg" class="header" alt="website header" >
+	
 <nav id="navigation">
    <a href="index.html">HOME</a>
    <a>FEATURES</a>
-<a href="publications.html">PUBLICATIONS</a>
-	<a href="contact.html">CONTACT</a>
+   <a href="publications.html">PUBLICATIONS</a>
+   <a href="contact.html">CONTACT</a>
    <a href="media.html">MEDIA</a>
    <a href="http://www.robocupathome.org/">ROBOCUP</a>
 </nav>
@@ -28,16 +29,16 @@
 		<li>Feature Choice -> ORB features</li>
 		<li>Three Threads: Tracking, Local Mapping and Loop Closing -> Run in parallel</li>
 		<li>Map Points, Key Frames and their Selection:
-			<br>Stores  world coordinate system, viewing system, representative ORB descriptor; camera pose, camera intrinsics like focal length and principal point</br></li> 
+			<br>Stores  world coordinate system, viewing system, representative ORB descriptor; camera pose, camera intrinsics like focal length and principal point</li> 
 		<li>Co-visibility Graph and Essential Graph
-			<br>Each node is a key frame and an edge between two key frames exists if they share observations of the same map points</br></li>
+			<br>Each node is a key frame and an edge between two key frames exists if they share observations of the same map points</li>
 		<li>Bags of Words Place Recognition -> To perform loop detection and re-localization
-			<br>visual vocabulary is created offline with the ORB descriptors extracted from a large set of images</br></li>
+			<br>visual vocabulary is created offline with the ORB descriptors extracted from a large set of images</li>
 	</ul>
 
 		
 <h3>Voice based modules</h3>
-<p>To interact with the people around, in a dynamic environment voice based modules will be integrated with other modules.<br>
+<p>To interact with the people around, in a dynamic environment voice based modules will be integrated with other modules.</p><br>
 
 Voice based modules comprise of : <br>
 <ul>
@@ -48,9 +49,25 @@ Voice based modules comprise of : <br>
 
 <p>To carry out voice based tasks or tasks which require human robot interaction, three microphones will be integrated with the hardware, 120 degrees apart and a kinect sensor. HARK, open source robot software for voice modules i.e. voice localization, automatic recognition and voice synthesis will be used.
 Using HARK will enable the robot to understand what the user says. after understanding it will be able to respond(reply and perform actions) accordingly and the robot will be able to distinguish different voices or voices coming from different positions. Hark will provide real time processing.</p>
+
 <h3>Facial Recognition</h3>
+<p>Searching of faces from a source image or video is referred as face detection and identification or verification, of people from digital video frames or images, according to given database is reffered as face recognition.For identification, unknown face is recognized by matching against faces of a data base containing known individuals. For verification the system confirms or rejects the claimed identity of the input face. We use the face detection algorithm implemented in the OpenCV library. </p> 
+
 <h3>Object Detection and Manipulation</h3>
-<h3>Mechanical Structure and Analysis</h3>
+<p>For object jetection we are using Object Recognition Kitichen (ORK). It comprises of different pakages like LINE-MOD, tabletop, TOD etc. of them we are using Tabletop technique.</p>
+<ul>
+	<li>Uses the depth image from any camera (we are using Kinect Xbox 360) to create 3D environment </li>
+	<li>Recognize the tabletop as 2D palnes </li>
+	<li>A 3D object that is present in its data base gets recognised when placed on the tabletop </li>
+	<li>For recognition of  number of objects, a database has to be built for the ORK to be trained enough to recognise a certain object. We fed the ORK database with meshes of objects of daily use, like can of coke, water bottle etc</li>
+</ul>
+	
+	<p>For object manipulation we use the turtlebot arm that consists of: <br> </p>
+	<ul>
+		<li>5 servo motors and a gripper, made up of carbon fiber</li>
+		<li>ArbotiX chip</li>
+	</ul>
+	<p>Program is fed using the Arduino 1.0.6 compiler. However there is also another approach using a GUI software name pyPose to porgram the motors of the Turtlebot arm</p>
 
    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
