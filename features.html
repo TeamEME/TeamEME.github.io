@@ -47,8 +47,7 @@ Voice based modules comprise of : <br>
 	<li>Voice synthesis </li>
 </ul>
 
-<p>To carry out voice based tasks or tasks which require human robot interaction, three microphones will be integrated with the hardware, 120 degrees apart and a kinect sensor. HARK, open source robot software for voice modules i.e. voice localization, automatic recognition and voice synthesis will be used.
-Using HARK will enable the robot to understand what the user says. after understanding it will be able to respond(reply and perform actions) accordingly and the robot will be able to distinguish different voices or voices coming from different positions. Hark will provide real time processing.</p>
+<p>To carry out voice based tasks or tasks which require human robot interaction, three microphones will be integrated with the hardware, 120 degrees apart and a kinect sensor. HARK, open source robot software is used for voice localization, while PocketSphinx for speech recognition and voice synthesis. This will enable the robot to understand what the user says. after understanding it will be able to respond (reply and perform actions) accordingly and the robot will be able to distinguish different voices or voices coming from different positions. </p>
 
 <h3>Facial Recognition</h3>
 <p>Searching of faces from a source image or video is referred as face detection and identification or verification, of people from digital video frames or images, according to given database is reffered as face recognition.For identification, unknown face is recognized by matching against faces of a data base containing known individuals. For verification the system confirms or rejects the claimed identity of the input face. We use the face detection algorithm implemented in the OpenCV library. </p> 
@@ -68,7 +67,11 @@ Using HARK will enable the robot to understand what the user says. after underst
 		<li>ArbotiX chip</li>
 	</ul>
 	<p>Program is fed using the Arduino 1.0.6 compiler. However there is also another approach using a GUI software name pyPose to porgram the motors of the Turtlebot arm</p>
-	
+
+<h3>Human Follower</h3>
+<p>Centeroid line algorithm is used for person tracking. It works on the the basis of centeroid line formed by the point cloud mapping using depth camera. The robot follows the center and maintains a specific distance and act accordingly if distance get changed.
+The point cloud mapping also allows obstacle avoidance, as the program is fed the density of the point clouds for a humanas as well as for random objects. Hence when the poit clud density changes It stops following. </p>
+
    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
 
