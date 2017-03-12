@@ -5,11 +5,21 @@
 <title>Features</title>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 <link rel="stylesheet" href="interface.css">
+
+<style type="text/css">
+ .row { vertical-align: top; height:auto !important; }
+ .list {display:none; }
+ .show {display: none; }
+ .hide:target + .show {display: inline; }
+ .hide:target {display: none; }
+ .hide:target ~ .list {display:inline; }
+ @media print { .hide, .show { display: none; } }
+ </style>
 </head>
 
 <body>
 <div id="page">
-<img src="https://s25.postimg.org/fdah78cjj/website_header_1200.jpg" class="header" alt="website header" >
+<img src="https://s25.postimg.org/fdah78cjj/website_header_1200.jpg" alt="website header" >
 	
 <nav id="navigation">
    <a href="index.html">HOME</a>
@@ -21,7 +31,11 @@
 </nav>
 
 <h2>Features</h2>
-<div data-role="collapsible">
+	
+<div class="row">
+<a href="#hide1" class="hide" id="hide1">Expand</a>
+<a href="#show1" class="show" id="show1">Collapse</a>
+<div class="list">
 <h3>SLAM (Simultaneous Localization And Mapping)</h3>
 	<p> The localization and mapping of a dynamic environment is has been done previously using the RGBD SLAM algoritm.
 		A better visual -SLAM algorithm, the ORB SLAM will be implemented now using a Kinect sensor</p>
@@ -37,6 +51,8 @@
 			<br>visual vocabulary is created offline with the ORB descriptors extracted from a large set of images</li>
 	</ul>
 </div>
+</div>
+
 
 <div data-role="collapsible">
 <h3>Voice based modules</h3>
