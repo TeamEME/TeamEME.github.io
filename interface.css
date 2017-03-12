@@ -90,7 +90,6 @@ font-weight: normal;
     
 font-style: normal;
 
-
 }
 
 
@@ -98,11 +97,6 @@ font-style: normal;
 body {
  font-family : arial, verdana, sans-serif;
 }
-
-/*h2 {
- font-family : georgia, times, serif;
- color : #666666;
-}*/
 
 h1, h2, h3, h4 {
  font-family : DroidSerifRegular,georgia, times, serif;
@@ -116,7 +110,7 @@ font-size : 90%;
 }
 
 #navigation a {
- color : #c0392b;
+ color : #3d3a3a;
  text-decoration : none;
  margin-right : 20px;
 }
@@ -139,6 +133,11 @@ font-size : 90%;
   width:100%;
  border : 1px solid #000000;
  margin : 0px 10px 10px 0px;
+}
+
+#header_image {
+  height:100%;
+  width:100%;
 }
 
 <style type="text/css">
