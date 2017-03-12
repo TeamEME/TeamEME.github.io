@@ -145,15 +145,7 @@ font-size : 90%;
   width:100%;
 }
 
-<style type="text/css">
-.header
-{
-text-align:center;
-display:block;
-}
-</style>
-
-#media img{
+#media {
   display:inline-block;
   height:500px;
   width:350px;
